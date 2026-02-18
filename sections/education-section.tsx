@@ -25,7 +25,6 @@ export default function EducationSection() {
                     </div>
                     <div>2021 - 2025</div>
                 </div>
-                <p className="mt-6 text-gray-500">Focused on software engineering fundamentals, practical full-stack development, and real-world project delivery.</p>
             </div>
         </Section>
     );

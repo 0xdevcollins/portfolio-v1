@@ -30,7 +30,7 @@ export default function ProjectsSection() {
                         className="hover:-translate-y-0.5 transition duration-300 max-w-75 border border-gray-200 rounded-xl"
                     >
                         <Image
-                            className="rounded-t-xl h-42 object-fit"
+                            className="rounded-t-xl h-42 object-cover"
                             src={project.image}
                             alt={project.title}
                             width={300}
