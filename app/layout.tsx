@@ -1,21 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins, Sorts_Mill_Goudy } from "next/font/google";
 import "./globals.css";
 import LenisScroll from "@/components/lenis";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-
-const poppins = Poppins({
-    variable: "--font-sans",
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
-});
-
-const sortsMillGoudy = Sorts_Mill_Goudy({
-    variable: "--font-mono",
-    subsets: ["latin"],
-    weight: ["400"],
-});
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
@@ -100,7 +87,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${poppins.variable} ${sortsMillGoudy.variable}`}>
+            <body>
                 <LenisScroll />
                 {children}
             </body>

@@ -1,13 +1,62 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Khand-Variable";
+    src: url("/fonts/khand/WEB/fonts/Khand-Variable.woff2") format("woff2"),
+        url("/fonts/khand/WEB/fonts/Khand-Variable.woff") format("woff"),
+        url("/fonts/khand/WEB/fonts/Khand-Variable.ttf") format("truetype");
+    font-weight: 300 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Array-Regular";
+    src: url("/fonts/array/WEB/fonts/Array-Regular.woff2") format("woff2"),
+        url("/fonts/array/WEB/fonts/Array-Regular.woff") format("woff"),
+        url("/fonts/array/WEB/fonts/Array-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Array-Semibold";
+    src: url("/fonts/array/WEB/fonts/Array-Semibold.woff2") format("woff2"),
+        url("/fonts/array/WEB/fonts/Array-Semibold.woff") format("woff"),
+        url("/fonts/array/WEB/fonts/Array-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Array-Bold";
+    src: url("/fonts/array/WEB/fonts/Array-Bold.woff2") format("woff2"),
+        url("/fonts/array/WEB/fonts/Array-Bold.woff") format("woff"),
+        url("/fonts/array/WEB/fonts/Array-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
 @theme {
-    --font-sans: "Poppins", sans-serif;
-    --font-mono: "Sorts Mill Goudy", monospace;
+    --font-sans: "Khand-Variable", "Khand-Regular", sans-serif;
+    --font-mono: "Array-Semibold", "Array-Regular", sans-serif;
 }
 
 @layer base {
     body {
-        @apply bg-white text-gray-800 antialiased text-sm;
+        @apply bg-white text-gray-800 antialiased text-lg;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-mono);
     }
 
     button {
